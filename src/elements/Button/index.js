@@ -32,13 +32,14 @@ export default function Button(props) {
 
     if(props.type === "link") {
         if(props.isExternal) {
-            return(
+            return (
+              // eslint-disable-next-line react/jsx-no-target-blank
               <a
                 href={props.href} 
                 className={className.join(" ")} 
                 style={props.style} 
-                target={props.target ==="_blank" ?"_blank":undefined} 
-                rel={props.target ==="_blank" ? "noopener noreferrer":undefined}
+                target={props.target ==="_blank" ? "_blank" : undefined} 
+                rel={props.target ==="_blank" ? "noopener noreferrer" : undefined}
               >
                 {props.children}
               </a>
@@ -66,6 +67,7 @@ export default function Button(props) {
             </button>;
 }
 
+// untuk pengecekan 
 Button.propTypes = {
     type: propTypes.oneOf(["button","link"]),
     onClick: propTypes.func,
@@ -78,6 +80,5 @@ Button.propTypes = {
     isSmall: propTypes.bool,
     isLarge: propTypes.bool,
     isBlock: propTypes.bool,
-    isExternal: propTypes.bool,
     hasShadow: propTypes.bool,
 }
