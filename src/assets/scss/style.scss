@@ -61,10 +61,10 @@ header {
 
     .navbar {
         height: 80px;
-        
+
         ul.navbar-nav {
             li.nav-item {
-                &.activte {
+                &.active {
                     a.nav-link {
                         color: $primary;
                     }
