@@ -12,7 +12,7 @@ export default function Header(props) {
         <header className="spacing-sm">
             <div className="container">
                 <nav className="navbar navbar-expand-lg navbar-light">
-                    <BrandIcon/> 
+                    <BrandIcon/>
                     <div className="collapse  navbar-collapse">
                         <ul className="navbar-nav ml-auto">
                             <li className={'nav-item${getNavLinkClass("/")}'}>
