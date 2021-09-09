@@ -19,7 +19,7 @@ export default function Hero(props) {
   }
 
   return (
-    <section className="container pt-4">
+    <section className="container pt-3">
       <div className="row align-items-center">
         <div className="col-auto pr-5" style={{ width: 530 }}>
           <h1 className="font-weight-bold line-height-1 mb-4">
